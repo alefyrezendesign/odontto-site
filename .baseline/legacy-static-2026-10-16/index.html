@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade para Dentistas e Clínicas Odontológicas | Odontto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="/main.js"></script>
+</head>
+<body class="flex min-h-screen flex-col font-sans text-navy antialiased">
+    <svg aria-hidden="true" class="absolute" focusable="false" height="0" width="0">
+        <defs>
+            <linearGradient id="odontto-icon-gradient" gradientUnits="userSpaceOnUse" x1="2" x2="22" y1="2" y2="22">
+                <stop offset="0%" stop-color="#00C8BD" />
+                <stop offset="100%" stop-color="#C6D53A" />
+            </linearGradient>
+            <linearGradient id="odontto-gradient-solutions-card-0" gradientUnits="userSpaceOnUse" x1="0" x2="24" y1="12" y2="12">
+                <stop offset="0%" stop-color="#00C8BD"></stop>
+                <stop offset="100%" stop-color="#C6D53A"></stop>
+            </linearGradient>
+            <linearGradient id="odontto-gradient-solutions-card-1" gradientUnits="userSpaceOnUse" x1="0" x2="24" y1="12" y2="12">
+                <stop offset="0%" stop-color="#00C8BD"></stop>
+                <stop offset="100%" stop-color="#C6D53A"></stop>
+            </linearGradient>
+            <linearGradient id="odontto-gradient-solutions-card-2" gradientUnits="userSpaceOnUse" x1="0" x2="24" y1="12" y2="12">
+                <stop offset="0%" stop-color="#00C8BD"></stop>
+                <stop offset="100%" stop-color="#C6D53A"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <header class="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur">
+      <div class="container-page flex min-h-20 items-center justify-between gap-4">
+        <a href="index.html" class="flex min-h-11 items-center gap-3" aria-label="Odontto Contabilidade - início">
+          <img src="/logo-odontto-cor-escura.png" alt="Odontto Contabilidade" class="h-auto w-37.5 sm:w-44.5">
+        </a>
+        
+        <nav aria-label="Navegação principal" class="hidden lg:block">
+          <ul class="flex items-center gap-1 rounded-full border border-border bg-offwhite px-2 py-2">
+            <li>
+              <a href="index.html"  aria-current="page" class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy bg-white text-navy shadow-line">
+                Início
+              </a>
+            </li>
+            <li>
+              <a href="sobre-nos.html"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Sobre nós
+              </a>
+            </li>
+            <li>
+              <a href="/#servicos"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="/#duvidas"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Dúvidas
+              </a>
+            </li>
+            <li>
+              <a href="contato.html"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hidden lg:block">
+          <a href="/contato#formulario" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold transition-[background-color,color,transform,box-shadow] duration-200 hover:-translate-y-0.5 active:translate-y-0 bg-navy text-white hover:bg-aqua hover:text-navy focus-visible:outline-aqua">
+            <span>Solicitar Diagnóstico Grátis</span>
+            <span aria-hidden="true" class="icon-gradient">
+              <i data-lucide="ArrowRight" style="width: 18px; height: 18px;"></i>
+            </span>
+          </a>
+        </div>
+
+        <button 
+          type="button" 
+          onclick="document.getElementById('menu-mobile').classList.toggle('hidden')"
+          class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-border text-navy lg:hidden" 
+          aria-expanded=isMenuOpen 
+          aria-controls="menu-mobile" 
+          aria-label="Abrir menu"
+        >
+          <i data-lucide="Menu" style="width: 22px; height: 22px;"></i>
+        </button>
+      </div>
+
+      
+        <div id="menu-mobile" class="border-t border-border bg-white lg:hidden hidden">
+          <nav aria-label="Navegação mobile" class="container-page py-4">
+            <ul class="grid gap-2">
+              <li>
+                <a href="index.html"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a href="sobre-nos.html"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Sobre nós
+                </a>
+              </li>
+              <li>
+                <a href="/#servicos"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a href="/#duvidas"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Dúvidas
+                </a>
+              </li>
+              <li>
+                <a href="contato.html"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Contato
+                </a>
+              </li>
+            </ul>
+            <a onClick=closeMenu href="/contato#formulario" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold transition-[background-color,color,transform,box-shadow] duration-200 hover:-translate-y-0.5 active:translate-y-0 bg-navy text-white hover:bg-aqua hover:text-navy focus-visible:outline-aqua mt-4 w-full">
+              <span>Solicitar Diagnóstico Grátis</span>
+              <span aria-hidden="true" class="icon-gradient">
+                <i data-lucide="ArrowRight" style="width: 18px; height: 18px;"></i>
+              </span>
+            </a>
+          </nav>
+        </div>
+      
+    </header>
+    
+    <main id="conteudo">
+        
+      
+      <section class="relative flex min-h-[90vh] items-center pt-8 pb-16 sm:py-20 lg:py-24">
+        <div class="absolute inset-0 z-0">
+          <img src="/images/bg-hero.png" alt="Fundo Hero Odontto" class="absolute inset-0 h-full w-full object-cover object-top">
+        </div>
+
+        <div class="container-page relative z-10">
+          <div class="max-w-xl text-left reveal-soft">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-6">
+              Cuidado contábil<br/>
+              para quem vive<br/>
+              <span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,var(--color-aqua),var(--color-lime))]">a odontologia.</span>
+            </h1>
+            <p class="text-lg text-white/80 mb-8 font-medium">
+              Sua clínica cresce, mas o seu lucro cresce junto? Transformamos números em informações para gerar mais margem, controle e crescimento seguro. Uma contabilidade que enxerga muito além de um CNPJ.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/contato#formulario" class="btn-gradient hover:btn-gradient-hover inline-flex min-h-14 items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-extrabold transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 shadow-[0_4px_14px_0_rgba(0,200,189,0.39)] hover:shadow-[0_6px_20px_rgba(198,213,58,0.23)]">
+                Solicitar Diagnóstico Grátis
+              </a>
+              <a href="https://wa.me/5521971807881" target="_blank" rel="noreferrer" class="inline-flex min-h-14 items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-bold transition-all hover:bg-white/10 text-white border-2 border-white/20">
+                Falar com especialista
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="bg-white py-12 border-b border-border shadow-sm relative z-10 -mt-2 lg:mt-0">
+        <div class="container-page">
+          <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+            <div class="lg:w-1/3 text-center lg:text-left">
+              <h2 class="title-standard mt-2">
+                Por que dentistas escolhem uma contabilidade especializada?
+              </h2>
+            </div>
+            
+            <div class="lg:w-2/3 flex w-full">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left border-r-0 md:border-r border-border md:pr-4">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="text-3xl font-extrabold text-navy">01</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-lightbulb text-aqua"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                  </div>
+                  <span class="text-base font-extrabold text-navy mb-1">Clareza</span>
+                  <span class="text-[14px] md:text-[15px] leading-relaxed text-secondary">Números simples para decisões mais seguras.</span>
+                </div>
+
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left border-r-0 md:border-r border-border md:pr-4">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="text-3xl font-extrabold text-navy">02</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-shield-check text-lime"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                  </div>
+                  <span class="text-base font-extrabold text-navy mb-1">Segurança</span>
+                  <span class="text-[14px] md:text-[15px] leading-relaxed text-secondary">Contabilidade e proteção em cada etapa.</span>
+                </div>
+
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left border-r-0 md:border-r border-border md:pr-4">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="text-3xl font-extrabold text-navy">03</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-users-round text-aqua"><path d="M18 21a8 8 0 0 0-16 0"></path><circle cx="10" cy="8" r="5"></circle><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path></svg>
+                  </div>
+                  <span class="text-base font-extrabold text-navy mb-1">Proximidade</span>
+                  <span class="text-[14px] md:text-[15px] leading-relaxed text-secondary">Nossa equipe conhece os processos e a rotina da clínica.</span>
+                </div>
+
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="text-3xl font-extrabold text-navy">04</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-trending-up text-lime"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                  </div>
+                  <span class="text-base font-extrabold text-navy mb-1">Resultado</span>
+                  <span class="text-[14px] md:text-[15px] leading-relaxed text-secondary">Crescimento real com inteligência financeira.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section-y bg-offwhite">
+        <div class="container-page">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            <div class="relative aspect-square w-full max-w-md mx-auto lg:max-w-none">
+              <img src="/images/odontto-about-accountant.webp" alt="Contador especializado Odontto" class="absolute inset-0 h-full w-full object-cover rounded-[2rem]">
+              <div class="absolute -bottom-6 -right-2 lg:-right-8 bg-navy/95 backdrop-blur-md p-6 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.2)] border border-aqua/30 max-w-[240px] flex gap-4 items-center">
+                <div class="w-12 h-12 rounded-full bg-aqua/20 flex items-center justify-center shrink-0">
+                  <i data-lucide="eye" class="text-aqua" style="width: 22px; height: 22px;"></i>
+                </div>
+                <p class="text-white font-medium text-[15px] leading-tight">
+                  Enxergamos a sua clínica, <span class="font-extrabold text-aqua">não apenas o CNPJ.</span>
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="flex flex-col items-start gap-6 pt-12 lg:pt-0">
+              <span class="section-eyebrow">Sobre nós</span>
+              <h2 class="title-standard">
+                Uma contabilidade feita para a realidade do dentista.
+              </h2>
+              <p class="subtitle-standard">
+                Por trás dos números da sua empresa existem pacientes, procedimentos, equipe, taxas e margens. A Odontto não foi criada apenas para entregar guias, mas para entender o dia a dia da sua clínica.
+              </p>
+              
+              <ul class="grid gap-3 mt-4 w-full">
+                <li class="flex items-center gap-4 bg-offwhite p-4 rounded-xl border border-white/60 shadow-sm transition-all hover:border-aqua/40 hover:bg-white hover:shadow-md">
+                  <i data-lucide="check-circle-2" class="text-aqua shrink-0" style="width: 24px; height: 24px;"></i>
+                  <span class="text-navy font-bold text-[15px]">Entendemos a operação da sua clínica</span>
+                </li>
+                <li class="flex items-center gap-4 bg-offwhite p-4 rounded-xl border border-white/60 shadow-sm transition-all hover:border-aqua/40 hover:bg-white hover:shadow-md">
+                  <i data-lucide="check-circle-2" class="text-aqua shrink-0" style="width: 24px; height: 24px;"></i>
+                  <span class="text-navy font-bold text-[15px]">Estrutura dedicada 100% à odontologia</span>
+                </li>
+                <li class="flex items-center gap-4 bg-offwhite p-4 rounded-xl border border-white/60 shadow-sm transition-all hover:border-aqua/40 hover:bg-white hover:shadow-md">
+                  <i data-lucide="check-circle-2" class="text-aqua shrink-0" style="width: 24px; height: 24px;"></i>
+                  <span class="text-navy font-bold text-[15px]">Análise inicial para descobrir oportunidades</span>
+                </li>
+              </ul>
+
+              <a href="/contato#formulario" class="btn-gradient hover:btn-gradient-hover inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-extrabold transition-all shadow-[0_4px_14px_0_rgba(0,200,189,0.39)] hover:shadow-[0_6px_20px_rgba(198,213,58,0.23)] mt-8 hover:-translate-y-0.5">
+                Solicitar Diagnóstico Grátis
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      
+      <section class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <img src="/images/odontto-cta-dentist.png" alt="Fundo paciente" class="absolute inset-0 h-full w-full object-cover object-center">
+          <div class="absolute inset-0 bg-navy/80 mix-blend-multiply"></div>
+          <div class="absolute inset-0 bg-linear-to-r from-navy via-navy/90 to-transparent"></div>
+        </div>
+
+        <div class="container-page relative z-10">
+          <div class="max-w-2xl">
+            <h2 class="title-standard text-white mb-6">
+              Você foca na clínica.<br/>
+              <span class="text-aqua">Nós focamos no resultado.</span>
+            </h2>
+            <p class="subtitle-standard text-white/80 font-medium mb-8">
+              Sua clínica cresce, mas o seu lucro cresce junto? Descubra o que a sua contabilidade atual não está te mostrando.
+            </p>
+            <a href="/contato#formulario" class="btn-gradient hover:btn-gradient-hover inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-extrabold transition-all shadow-[0_4px_14px_0_rgba(0,200,189,0.39)] hover:shadow-[0_6px_20px_rgba(198,213,58,0.23)] hover:-translate-y-0.5">
+              Quero meu Diagnóstico Grátis
+            </a>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section-y bg-offwhite">
+        <div class="container-page">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="title-standard">
+              Como a Odontto cuida do seu consultório.
+            </h2>
+            <p class="subtitle-standard mx-auto">
+              Um método claro para que a contabilidade ajude você a decidir o futuro.
+            </p>
+          </div>
+
+          <div class="relative mt-12 lg:mt-20 group/section">
+            
+            <style>
+              @keyframes drawLineFlow {
+                0% { width: 0%; opacity: 0; }
+                100% { width: 100%; opacity: 1; }
+              }
+              .animate-draw-line {
+                animation: drawLineFlow 2s ease-out forwards;
+                animation-timeline: view();
+                animation-range: entry 10% cover 30%;
+              }
+            </style>
+            
+            <div class="hidden md:block absolute top-[3rem] left-[12%] right-[12%] h-[2px] bg-border overflow-hidden">
+              <div class="h-full bg-aqua/40 animate-draw-line"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-10 lg:gap-12 relative z-10">
+              
+              <div class="group flex flex-col items-center text-center relative cursor-default">
+                <div class="relative mb-6">
+                  <div class="h-24 w-24 rounded-full bg-white border border-border group-hover:border-aqua shadow-sm group-hover:shadow-md flex items-center justify-center text-3xl font-extrabold transition-all duration-500 group-hover:-translate-y-2 relative z-10">
+                    <span class="text-navy group-hover:text-aqua transition-colors">1</span>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-navy mb-1">Diagnóstico Inicial</h3>
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                  <div class="overflow-hidden">
+                    <p class="text-[14.5px] text-secondary leading-relaxed pt-3">
+                      Análise da sua carga tributária, estrutura de custos e identificação de oportunidades e riscos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="group flex flex-col items-center text-center relative cursor-default">
+                <div class="relative mb-6">
+                  <div class="h-24 w-24 rounded-full bg-white border border-border group-hover:border-aqua shadow-sm group-hover:shadow-md flex items-center justify-center text-3xl font-extrabold transition-all duration-500 group-hover:-translate-y-2 relative z-10">
+                    <span class="text-navy group-hover:text-aqua transition-colors">2</span>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-navy mb-1">Proteger</h3>
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                  <div class="overflow-hidden">
+                    <p class="text-[14.5px] text-secondary leading-relaxed pt-3">
+                      Protegemos aquilo que o dentista já construiu: adequação tributária, riscos e folha de pagamento.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="group flex flex-col items-center text-center relative cursor-default">
+                <div class="relative mb-6">
+                  <div class="h-24 w-24 rounded-full bg-white border border-border group-hover:border-lime shadow-sm group-hover:shadow-md flex items-center justify-center text-3xl font-extrabold transition-all duration-500 group-hover:-translate-y-2 relative z-10">
+                    <span class="text-navy group-hover:text-lime transition-colors">3</span>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-navy mb-1">Performar</h3>
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                  <div class="overflow-hidden">
+                    <p class="text-[14.5px] text-secondary leading-relaxed pt-3">
+                      Fazer a clínica produzir mais resultado através do controle de fluxo de caixa, custos e margem real.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="group flex flex-col items-center text-center relative cursor-default">
+                <div class="relative mb-6">
+                  <div class="h-24 w-24 rounded-full bg-white border border-border group-hover:border-lime shadow-sm group-hover:shadow-md flex items-center justify-center text-3xl font-extrabold transition-all duration-500 group-hover:-translate-y-2 relative z-10">
+                    <span class="text-navy group-hover:text-lime transition-colors">4</span>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-navy mb-1">Evoluir</h3>
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                  <div class="overflow-hidden">
+                    <p class="text-[14.5px] text-secondary leading-relaxed pt-3">
+                      Preparar o próximo passo de forma inteligente: investimentos rentáveis, expansão e novas unidades.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section-y bg-white border-b border-border">
+        <div class="container-page">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="flex flex-col gap-6">
+              <span class="section-eyebrow">Digital</span>
+              <h2 class="title-standard">
+                Atendimento digital, rápido e feito para a odontologia.
+              </h2>
+              <p class="subtitle-standard">
+                Esqueça papelada e burocracia lenta. A Odontto utiliza as melhores plataformas para integrar com a sua clínica. Você não fala com robôs, mas com especialistas através de canais ágeis.
+              </p>
+              
+              <div class="grid sm:grid-cols-2 gap-5 mt-6">
+                <div class="flex items-center gap-4 bg-offwhite px-5 py-3.5 rounded-2xl border border-white shadow-sm hover:border-aqua/30 transition-colors">
+                  <div class="h-10 w-10 rounded-full bg-aqua/10 flex items-center justify-center text-aqua shrink-0">
+                    <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <span class="font-bold text-navy text-[15px]">Via WhatsApp</span>
+                </div>
+                <div class="flex items-center gap-4 bg-offwhite px-5 py-3.5 rounded-2xl border border-white shadow-sm hover:border-aqua/30 transition-colors">
+                  <div class="h-10 w-10 rounded-full bg-aqua/10 flex items-center justify-center text-aqua shrink-0">
+                    <i data-lucide="laptop" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <span class="font-bold text-navy text-[15px]">Totalmente em Nuvem</span>
+                </div>
+                <div class="flex items-center gap-4 bg-offwhite px-5 py-3.5 rounded-2xl border border-white shadow-sm hover:border-aqua/30 transition-colors">
+                  <div class="h-10 w-10 rounded-full bg-aqua/10 flex items-center justify-center text-aqua shrink-0">
+                    <i data-lucide="clock" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <span class="font-bold text-navy text-[15px]">Respostas Rápidas</span>
+                </div>
+                <div class="flex items-center gap-4 bg-offwhite px-5 py-3.5 rounded-2xl border border-white shadow-sm hover:border-aqua/30 transition-colors">
+                  <div class="h-10 w-10 rounded-full bg-aqua/10 flex items-center justify-center text-aqua shrink-0">
+                    <i data-lucide="trending-up" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <span class="font-bold text-navy text-[15px]">Painéis Visuais</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative aspect-video lg:aspect-square w-full rounded-[2rem] overflow-hidden shadow-xl">
+              <img src="/images/odontto-equipe-atendimento.png" alt="Equipe de atendimento Odontto" class="absolute inset-0 h-full w-full object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="odontto-analises" class="relative w-full bg-offwhite pt-10 md:pt-16 lg:h-[250vh]">
+        <div class="lg:sticky lg:top-0 lg:h-screen w-full flex items-center justify-center lg:overflow-hidden pt-8 pb-6 lg:py-0">
+          <div class="container-page relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
+              
+              <!-- LEFT SIDE -->
+              <div class="w-full lg:w-[40%] shrink-0 flex flex-col justify-center relative z-20 items-center text-center lg:items-start lg:text-left pt-0">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full shadow-sm bg-white border border-border mb-6 mx-auto lg:mx-0">
+                  <span class="text-aqua">
+                    <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span class="text-[11px] font-extrabold uppercase tracking-[0.08em] text-navy">
+                    RX Análise
+                  </span>
+                </div>
+                <h2 class="title-standard mb-6">
+                  Análise profunda <br class="hidden lg:block"/>
+                  para <span class="text-aqua">decisões claras.</span>
+                </h2>
+                <p class="subtitle-standard max-w-md mx-auto lg:mx-0 mb-8">
+                  Identifique impostos pagos a mais, taxas invisíveis e gargalos financeiros que reduzem o lucro da sua clínica todos os meses.
+                </p>
+                <a href="/contato#formulario" class="group btn-gradient hover:btn-gradient-hover inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-3 text-base font-extrabold transition-all shadow-[0_4px_14px_0_rgba(0,200,189,0.39)] hover:shadow-[0_6px_20px_rgba(198,213,58,0.23)] hover:-translate-y-0.5 w-full sm:w-auto">
+                  <span>Solicitar Diagnóstico Grátis</span>
+                  <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+              </div>
+
+              <!-- RIGHT SIDE -->
+              <div class="flex-1 w-full relative z-10">
+                <div class="relative w-full lg:h-[650px] flex flex-col justify-center lg:overflow-hidden">
+                  <div id="analises-track" class="lg:absolute lg:left-0 lg:right-0 w-full" style="top: 50%;">
+                    
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">01</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Fluxo de caixa</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Entradas e saídas</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Previsibilidade</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Sem controle de entradas e saídas, você trabalha no escuro. A falta de previsibilidade do fluxo de caixa pode esconder prejuízos e impedir o crescimento sustentável da sua clínica.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">02</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Impostos pagos a mais</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Planejamento tributário</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Prevenção</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="trending-down" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Clínicas odontológicas muitas vezes pagam impostos indevidos no enquadramento. Sem uma revisão tributária, você pode estar deixando parte do seu lucro na mesa do governo todos os meses.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">03</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Altas taxas de cartões</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Maquininhas</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Cobranças indevidas</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="credit-card" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Você sabe exatamente quanto as maquininhas estão levando do lucro dos tratamentos? Taxas não negociadas e cobranças indevidas corroem sua margem de forma silenciosa e contínua.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">04</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Taxas bancárias</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Custos recorrentes</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Tarifas ocultas</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="landmark" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Mapeie custos financeiros recorrentes que passam despercebidos na operação. Tarifas bancárias, taxas de manutenção e juros acumulados podem representar uma fatia significativa do faturamento.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">05</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Margem de lucro</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Rentabilidade</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Análise por procedimento</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="trending-up" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Veja com clareza onde sua margem está sendo comprimida. Analisamos cada procedimento odontológico para identificar onde você ganha e onde está perdendo dinheiro sem perceber.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">06</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Precificação incorreta</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Formação de preço</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Competitividade</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="tag" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Evite vender com margem baixa por falhas na formação de preço. Uma precificação mal calibrada destrói a lucratividade antes mesmo do paciente sentar na cadeira.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">07</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Custos invisíveis</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Despesas ocultas</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Previsibilidade</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="eye-off" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Revele despesas ocultas que prejudicam a previsibilidade financeira. Custos com materiais e laboratórios que não aparecem nos relatórios podem estar drenando seu resultado.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="analise-item group border-b border-border last:border-b-0 cursor-pointer transition-opacity duration-300 ease-out">
+  <div class="lg:h-[149px] flex items-center gap-4 lg:gap-10 py-6 lg:py-0">
+    <span class="text-4xl lg:text-5xl font-extrabold tabular-nums shrink-0 transition-colors duration-300 w-12 lg:w-16 text-slate-300 group-hover:text-aqua">08</span>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 text-secondary group-hover:text-navy">Desperdícios operacionais</h3>
+      <div class="flex items-center gap-2.5 mt-2 flex-wrap">
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Eficiência</span>
+          <span class="w-1.5 h-1.5 rounded-full shrink-0 transition-colors bg-slate-300 group-hover:bg-aqua"></span>
+        </span>
+        
+        <span class="flex items-center gap-2.5">
+          <span class="text-sm font-medium transition-colors text-slate-400 group-hover:text-secondary">Processos internos</span>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 mb-0 group-hover:max-h-[300px] group-hover:opacity-100 group-hover:mb-6">
+    <div class="flex items-start gap-4 pl-16 lg:pl-[5.5rem] pr-4">
+      <div class="w-10 h-10 rounded-xl bg-aqua/10 text-aqua flex items-center justify-center shrink-0 border border-aqua/30">
+        <i data-lucide="cog" class="w-5 h-5"></i>
+      </div>
+      <p class="text-[14.5px] text-secondary leading-relaxed max-w-lg">
+        Encontre gargalos que consomem tempo, dinheiro e eficiência. Processos manuais, retrabalho e falta de automação prejudicam a operação da clínica e reduzem o lucro.
+      </p>
+    </div>
+  </div>
+</div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <div id="rx-solucoes-wrapper" class="relative z-30 w-full bg-navy">
+  
+  <!-- PART 1: Nossas Soluções (6 Cards) -->
+  <section class="relative py-24 lg:py-32 overflow-hidden border-b border-white/5">
+    <div class="container-page relative z-10">
+      <div class="w-full mb-16 lg:mb-24 flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 lg:gap-12">
+        <div class="shrink-0 flex flex-col items-center md:items-start text-center md:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full shadow-[0_0_15px_rgba(0,200,189,0.15)] bg-aqua/10 border border-aqua/30 mb-6 transition-all hover:bg-aqua/20 w-fit">
+            <span class="text-aqua">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-[0.08em] text-aqua">Nossas Soluções</span>
+          </div>
+          <h2 class="title-standard text-white md:whitespace-nowrap">
+            Soluções para <br><span class="font-light italic text-aqua/70">resultados reais</span>
+          </h2>
+        </div>
+        
+        <div class="w-full lg:w-auto flex-1 max-w-[680px] flex flex-col md:flex-row items-center justify-between bg-[linear-gradient(135deg,#00C8BD_0%,#C6D53A_100%)] rounded-3xl p-8 lg:px-10 lg:py-10 shadow-xl shadow-aqua/20 gap-6">
+          <span class="text-navy text-base lg:text-xl font-extrabold text-center md:text-left">Quer estruturar e proteger <br class="block sm:hidden"> sua clínica?</span>
+          <a href="/contato#formulario" class="group flex items-center gap-3 px-8 py-4 rounded-full bg-navy text-white hover:bg-[#07111f] transition-colors shadow-sm shrink-0 w-full md:w-auto justify-center">
+            <span class="text-[15px] font-bold uppercase tracking-wide">Falar com consultor</span>
+            <div class="w-8 h-8 rounded-full bg-aqua/20 flex items-center justify-center group-hover:bg-aqua/30 transition-colors">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-aqua"><path d="m9 18 6-6-6-6"></path></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Card 01 -->
+        <div class="bg-white/5 border border-white/5 hover:border-aqua/30 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 lg:p-10 flex flex-col relative overflow-hidden group transition-all duration-500 min-h-[160px] md:min-h-[380px]">
+          <span class="text-slate-500 group-hover:text-aqua text-sm font-bold mb-4 md:mb-6 block tracking-widest transition-colors">01</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white leading-tight mb-3 md:mb-5 tracking-tight pr-10 md:pr-0">Abertura e Regularidade</h3>
+          <p class="text-slate-400 group-hover:text-slate-300 text-[14px] md:text-[15px] leading-relaxed mb-0 md:mb-12 flex-1 transition-colors">Abrimos e regularizamos seu CNPJ, alvarás, vigilância sanitária e CRO, focando sempre na estrutura com menor carga tributária.</p>
+          <div class="mt-auto md:relative z-10 flex items-center justify-end md:justify-between w-full">
+            <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-aqua/10 rounded-full blur-[40px] group-hover:bg-aqua/20 transition-colors duration-700 pointer-events-none"></div>
+            <a href="/contato#formulario" class="absolute top-5 right-5 md:relative md:top-auto md:right-auto z-10 w-9 h-9 md:w-11 md:h-11 rounded-full bg-aqua flex items-center justify-center text-navy shadow-[0_0_15px_rgba(0,200,189,0.3)] group-hover:shadow-[0_0_25px_rgba(0,200,189,0.6)] group-hover:scale-110 transition-all duration-300" title="Saber mais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-[18px] h-[18px] md:w-[20px] md:h-[20px] group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="bg-white/5 border border-white/5 hover:border-lime/30 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 lg:p-10 flex flex-col relative overflow-hidden group transition-all duration-500 min-h-[160px] md:min-h-[380px]">
+          <span class="text-slate-500 group-hover:text-lime text-sm font-bold mb-4 md:mb-6 block tracking-widest transition-colors">02</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white leading-tight mb-3 md:mb-5 tracking-tight pr-10 md:pr-0">Planejamento Tributário</h3>
+          <p class="text-slate-400 group-hover:text-slate-300 text-[14px] md:text-[15px] leading-relaxed mb-0 md:mb-12 flex-1 transition-colors">Análises contínuas para garantir o regime fiscal correto e seguro (como a equiparação hospitalar), aumentando seu caixa livre e evitando malhas finas.</p>
+          <div class="mt-auto md:relative z-10 flex items-center justify-end md:justify-between w-full">
+            <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-lime/10 rounded-full blur-[40px] group-hover:bg-lime/20 transition-colors duration-700 pointer-events-none"></div>
+            <a href="/contato#formulario" class="absolute top-5 right-5 md:relative md:top-auto md:right-auto z-10 w-9 h-9 md:w-11 md:h-11 rounded-full bg-lime flex items-center justify-center text-navy shadow-[0_0_15px_rgba(198,213,58,0.3)] group-hover:shadow-[0_0_25px_rgba(198,213,58,0.6)] group-hover:scale-110 transition-all duration-300" title="Saber mais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-[18px] h-[18px] md:w-[20px] md:h-[20px] group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="bg-white/5 border border-white/5 hover:border-aqua/30 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 lg:p-10 flex flex-col relative overflow-hidden group transition-all duration-500 min-h-[160px] md:min-h-[380px]">
+          <span class="text-slate-500 group-hover:text-aqua text-sm font-bold mb-4 md:mb-6 block tracking-widest transition-colors">03</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white leading-tight mb-3 md:mb-5 tracking-tight pr-10 md:pr-0">Gestão Financeira (BPO)</h3>
+          <p class="text-slate-400 group-hover:text-slate-300 text-[14px] md:text-[15px] leading-relaxed mb-0 md:mb-12 flex-1 transition-colors">Assumimos contas a pagar, recebimentos e controle de caixa, trazendo clareza real sobre sua margem, inadimplência e lucros diários.</p>
+          <div class="mt-auto md:relative z-10 flex items-center justify-end md:justify-between w-full">
+            <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-aqua/10 rounded-full blur-[40px] group-hover:bg-aqua/20 transition-colors duration-700 pointer-events-none"></div>
+            <a href="/contato#formulario" class="absolute top-5 right-5 md:relative md:top-auto md:right-auto z-10 w-9 h-9 md:w-11 md:h-11 rounded-full bg-aqua flex items-center justify-center text-navy shadow-[0_0_15px_rgba(0,200,189,0.3)] group-hover:shadow-[0_0_25px_rgba(0,200,189,0.6)] group-hover:scale-110 transition-all duration-300" title="Saber mais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-[18px] h-[18px] md:w-[20px] md:h-[20px] group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </div>
+
+        <!-- Card 04 -->
+        <div class="bg-white/5 border border-white/5 hover:border-lime/30 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 lg:p-10 flex flex-col relative overflow-hidden group transition-all duration-500 min-h-[160px] md:min-h-[380px]">
+          <span class="text-slate-500 group-hover:text-lime text-sm font-bold mb-4 md:mb-6 block tracking-widest transition-colors">04</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white leading-tight mb-3 md:mb-5 tracking-tight pr-10 md:pr-0">Folha e Parcerias</h3>
+          <p class="text-slate-400 group-hover:text-slate-300 text-[14px] md:text-[15px] leading-relaxed mb-0 md:mb-12 flex-1 transition-colors">Evite passivos trabalhistas. Gerenciamos a folha de pagamento de recepcionistas e estruturamos contratos seguros com dentistas parceiros.</p>
+          <div class="mt-auto md:relative z-10 flex items-center justify-end md:justify-between w-full">
+            <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-lime/10 rounded-full blur-[40px] group-hover:bg-lime/20 transition-colors duration-700 pointer-events-none"></div>
+            <a href="/contato#formulario" class="absolute top-5 right-5 md:relative md:top-auto md:right-auto z-10 w-9 h-9 md:w-11 md:h-11 rounded-full bg-lime flex items-center justify-center text-navy shadow-[0_0_15px_rgba(198,213,58,0.3)] group-hover:shadow-[0_0_25px_rgba(198,213,58,0.6)] group-hover:scale-110 transition-all duration-300" title="Saber mais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-[18px] h-[18px] md:w-[20px] md:h-[20px] group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </div>
+
+        <!-- Card 05 -->
+        <div class="bg-white/5 border border-white/5 hover:border-aqua/30 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 lg:p-10 flex flex-col relative overflow-hidden group transition-all duration-500 min-h-[160px] md:min-h-[380px]">
+          <span class="text-slate-500 group-hover:text-aqua text-sm font-bold mb-4 md:mb-6 block tracking-widest transition-colors">05</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white leading-tight mb-3 md:mb-5 tracking-tight pr-10 md:pr-0">Precificação Estratégica</h3>
+          <p class="text-slate-400 group-hover:text-slate-300 text-[14px] md:text-[15px] leading-relaxed mb-0 md:mb-12 flex-1 transition-colors">Identificamos tratamentos com margem negativa e auxiliamos na precificação baseada em custos reais de materiais e taxas de cartão.</p>
+          <div class="mt-auto md:relative z-10 flex items-center justify-end md:justify-between w-full">
+            <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-aqua/10 rounded-full blur-[40px] group-hover:bg-aqua/20 transition-colors duration-700 pointer-events-none"></div>
+            <a href="/contato#formulario" class="absolute top-5 right-5 md:relative md:top-auto md:right-auto z-10 w-9 h-9 md:w-11 md:h-11 rounded-full bg-aqua flex items-center justify-center text-navy shadow-[0_0_15px_rgba(0,200,189,0.3)] group-hover:shadow-[0_0_25px_rgba(0,200,189,0.6)] group-hover:scale-110 transition-all duration-300" title="Saber mais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-[18px] h-[18px] md:w-[20px] md:h-[20px] group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </div>
+
+        <!-- Card 06 -->
+        <div class="bg-white/5 border border-white/5 hover:border-lime/30 rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 lg:p-10 flex flex-col relative overflow-hidden group transition-all duration-500 min-h-[160px] md:min-h-[380px]">
+          <span class="text-slate-500 group-hover:text-lime text-sm font-bold mb-4 md:mb-6 block tracking-widest transition-colors">06</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white leading-tight mb-3 md:mb-5 tracking-tight pr-10 md:pr-0">Diagnóstico 360º</h3>
+          <p class="text-slate-400 group-hover:text-slate-300 text-[14px] md:text-[15px] leading-relaxed mb-0 md:mb-12 flex-1 transition-colors">Realizamos uma avaliação completa dos seus processos para identificar desperdícios de materiais e despesas ocultas não projetadas.</p>
+          <div class="mt-auto md:relative z-10 flex items-center justify-end md:justify-between w-full">
+            <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-lime/10 rounded-full blur-[40px] group-hover:bg-lime/20 transition-colors duration-700 pointer-events-none"></div>
+            <a href="/contato#formulario" class="absolute top-5 right-5 md:relative md:top-auto md:right-auto z-10 w-9 h-9 md:w-11 md:h-11 rounded-full bg-lime flex items-center justify-center text-navy shadow-[0_0_15px_rgba(198,213,58,0.3)] group-hover:shadow-[0_0_25px_rgba(198,213,58,0.6)] group-hover:scale-110 transition-all duration-300" title="Saber mais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-[18px] h-[18px] md:w-[20px] md:h-[20px] group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART 2: Ecossistema RX -->
+  <section id="rx-ecossistema" class="flex flex-col relative overflow-hidden w-full z-20">
+    
+    <div class="flex flex-col justify-center pt-24 lg:pt-[10rem] pb-0 relative z-10">
+      <div class="container-page flex flex-col gap-8 lg:gap-24">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="flex flex-col items-center lg:items-start text-center lg:text-left lg:pr-10">
+            <h2 class="title-standard text-white max-w-full mb-0">
+              Muito além <br>da contabilidade <br>
+              <span class="font-light italic text-aqua/70">um ecossistema <br>de soluções.</span>
+            </h2>
+            <a href="/contato#formulario" class="group btn-gradient hover:btn-gradient-hover inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-3 text-base font-extrabold transition-all shadow-[0_4px_14px_0_rgba(0,200,189,0.39)] hover:shadow-[0_6px_20px_rgba(198,213,58,0.23)] hover:-translate-y-0.5 w-full sm:w-auto mt-8 lg:mt-10">
+              <span class="relative z-10 flex items-center gap-2">Explorar Soluções
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-1.5 transition-all duration-300" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </span>
+            </a>
+          </div>
+          
+          <div class="relative flex items-center justify-center w-full group cursor-pointer lg:justify-end">
+            <div class="rx-orbit relative aspect-square w-full max-w-[430px]" aria-hidden="true">
+              <span class="absolute left-1/2 top-1/2 h-[36%] w-[36%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-aqua/[0.10] blur-3xl transition-colors duration-500 group-hover:bg-aqua/[0.24]"></span>
+              <span class="rx-orbit-ring" style="--orbit-size: 36%; --orbit-duration: 28s; --orbit-delay: -8s; --orbit-direction: normal; --orbit-start: 34deg"><span class="rx-orbit-dot bg-white h-3.5 w-3.5"></span></span>
+              <span class="rx-orbit-ring" style="--orbit-size: 52%; --orbit-duration: 42s; --orbit-delay: -17s; --orbit-direction: reverse; --orbit-start: 138deg"><span class="rx-orbit-dot bg-lime h-3.5 w-3.5"></span></span>
+              <span class="rx-orbit-ring" style="--orbit-size: 68%; --orbit-duration: 54s; --orbit-delay: -31s; --orbit-direction: normal; --orbit-start: 246deg"><span class="rx-orbit-dot bg-white h-3.5 w-3.5"></span></span>
+              <span class="rx-orbit-ring" style="--orbit-size: 84%; --orbit-duration: 66s; --orbit-delay: -44s; --orbit-direction: reverse; --orbit-start: 312deg"><span class="rx-orbit-dot bg-white h-4 w-4"></span></span>
+              <span class="rx-orbit-core">
+                <img src="/images/rx-orbit-logo.png" alt="" class="rx-orbit-mark">
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-16 py-8 md:py-12 border-t-[3px] md:border-b-[3px] border-white/10 lg:mt-0 items-center">
+          <div class="flex items-center gap-4 md:gap-8 min-w-0">
+            <img alt="RX" class="h-8 sm:h-9 md:h-11 object-contain shrink" loading="lazy" decoding="async" src="/images/rx-solucoes-logo.png">
+          </div>
+          <p class="text-[15px] md:text-xl text-slate-300/90 leading-relaxed font-light">O <strong class="text-white font-medium">RX Soluções</strong> é um hub contábil que integra um ecossistema de serviços, diagnóstico, operação e parceiros estratégicos. Conectamos sua clínica às melhores soluções de maneira aderente ao seu momento de crescimento.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full relative z-10 py-16 lg:py-24">
+      <div class="container-page">
+        <div class="grid grid-cols-1 md:grid-cols-3 border-t-[3px] md:border-y-[3px] border-white/10 md:divide-x-[3px] md:divide-y-0 divide-y-[3px] divide-white/10 border-x-0 md:border-x-[3px]">
+          
+          <div class="group relative p-6 md:p-10 lg:p-14 flex flex-col items-start bg-transparent hover:bg-white/[0.02] transition-colors duration-500 cursor-pointer">
+            <div class="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-0 mb-5 md:mb-0 w-full">
+              <div class="w-10 h-10 md:w-12 md:h-12 md:mb-10 lg:mb-12 rounded-lg bg-aqua/10 border border-aqua/30 flex shrink-0 items-center justify-center group-hover:border-lime group-hover:shadow-[0_0_20px_rgba(198,213,58,0.2)] transition-all duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 md:w-[22px] md:h-[22px] text-aqua drop-shadow-[0_0_8px_rgba(0,200,189,0.8)]"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m6.08 9.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"></path><path d="m6.08 14.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"></path></svg>
+              </div>
+              <h3 class="text-xl md:text-2xl font-semibold text-white md:mb-4 tracking-tight leading-tight whitespace-nowrap md:whitespace-normal group-hover:text-aqua transition-colors">Visão Sistêmica</h3>
+            </div>
+            <p class="text-[14.5px] md:text-base text-slate-400 font-light leading-relaxed">Compreendemos o seu negócio de ponta a ponta, integrando diferentes áreas para criar estratégias que funcionam na prática.</p>
+          </div>
+
+          <div class="group relative p-6 md:p-10 lg:p-14 flex flex-col items-start bg-transparent hover:bg-white/[0.02] transition-colors duration-500 cursor-pointer">
+            <div class="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-0 mb-5 md:mb-0 w-full">
+              <div class="w-10 h-10 md:w-12 md:h-12 md:mb-10 lg:mb-12 rounded-lg bg-aqua/10 border border-aqua/30 flex shrink-0 items-center justify-center group-hover:border-lime group-hover:shadow-[0_0_20px_rgba(198,213,58,0.2)] transition-all duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 md:w-[22px] md:h-[22px] text-aqua drop-shadow-[0_0_8px_rgba(0,200,189,0.8)]"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+              </div>
+              <h3 class="text-xl md:text-2xl font-semibold text-white md:mb-4 tracking-tight leading-tight whitespace-nowrap md:whitespace-normal group-hover:text-aqua transition-colors">Crescimento Escalável</h3>
+            </div>
+            <p class="text-[14.5px] md:text-base text-slate-400 font-light leading-relaxed">Focamos em resultados duradouros, construindo bases sólidas para que sua clínica escale de forma segura e contínua.</p>
+          </div>
+
+          <div class="group relative p-6 md:p-10 lg:p-14 flex flex-col items-start bg-transparent hover:bg-white/[0.02] transition-colors duration-500 cursor-pointer">
+            <div class="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-0 mb-5 md:mb-0 w-full">
+              <div class="w-10 h-10 md:w-12 md:h-12 md:mb-10 lg:mb-12 rounded-lg bg-aqua/10 border border-aqua/30 flex shrink-0 items-center justify-center group-hover:border-lime group-hover:shadow-[0_0_20px_rgba(198,213,58,0.2)] transition-all duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 md:w-[22px] md:h-[22px] text-aqua drop-shadow-[0_0_8px_rgba(0,200,189,0.8)]"><circle cx="12" cy="5" r="3"></circle><circle cx="5" cy="19" r="3"></circle><circle cx="19" cy="19" r="3"></circle><line x1="12" y1="8" x2="5" y2="16"></line><line x1="12" y1="8" x2="19" y2="16"></line></svg>
+              </div>
+              <h3 class="text-xl md:text-2xl font-semibold text-white md:mb-4 tracking-tight leading-tight whitespace-nowrap md:whitespace-normal group-hover:text-aqua transition-colors">Conexões de Valor</h3>
+            </div>
+            <p class="text-[14.5px] md:text-base text-slate-400 font-light leading-relaxed">Encurtamos caminhos ao conectar sua operação a um ecossistema exclusivo de soluções validadas pelo mercado odontológico.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full relative z-10 pb-16 pt-0">
+      <div class="container-page">
+        <div class="border-t-[3px] border-white/10">
+          
+          <details class="group border-b-[3px] border-white/10" name="rx-solucoes-accordion">
+            <summary class="w-full flex items-center justify-between py-8 md:py-10 cursor-pointer group text-left list-none">
+              <h3 class="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight transition-colors duration-300 text-white group-hover:text-aqua">RX Análises</h3>
+              <div class="w-10 h-10 rounded-full border flex items-center justify-center flex-shrink-0 ml-6 transition-all duration-500 border-white/20 group-hover:border-white/40 group-open:border-aqua group-open:bg-aqua/10 group-open:rotate-45">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/70 group-open:text-aqua"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+              </div>
+            </summary>
+            <div class="pb-10 md:pb-12 max-w-2xl">
+              <p class="text-[15px] md:text-xl text-slate-300/80 leading-relaxed font-light mb-8">Inteligência estratégica baseada em dados reais da sua clínica. Avaliamos cenários, identificamos oportunidades e entregamos diagnósticos precisos para decisões mais seguras.</p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Diagnóstico Estratégico</span>
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Análise de Dados</span>
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Inteligência de Mercado</span>
+              </div>
+            </div>
+          </details>
+
+          <details class="group border-b-[3px] border-white/10" name="rx-solucoes-accordion">
+            <summary class="w-full flex items-center justify-between py-8 md:py-10 cursor-pointer group text-left list-none">
+              <h3 class="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight transition-colors duration-300 text-white group-hover:text-aqua">Partner Program</h3>
+              <div class="w-10 h-10 rounded-full border flex items-center justify-center flex-shrink-0 ml-6 transition-all duration-500 border-white/20 group-hover:border-white/40 group-open:border-aqua group-open:bg-aqua/10 group-open:rotate-45">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/70 group-open:text-aqua"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+              </div>
+            </summary>
+            <div class="pb-10 md:pb-12 max-w-2xl">
+              <p class="text-[15px] md:text-xl text-slate-300/80 leading-relaxed font-light mb-8">Rede curada de parceiros especializados em tecnologia, marketing, jurídico e gestão. Conectamos sua empresa aos melhores fornecedores com curadoria e acompanhamento.</p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Curadoria de Parceiros</span>
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Tecnologia</span>
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Marketing</span>
+              </div>
+            </div>
+          </details>
+
+          <details class="group" name="rx-solucoes-accordion">
+            <summary class="w-full flex items-center justify-between py-8 md:py-10 cursor-pointer group text-left list-none">
+              <h3 class="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight transition-colors duration-300 text-white group-hover:text-aqua">Operação e Soluções</h3>
+              <div class="w-10 h-10 rounded-full border flex items-center justify-center flex-shrink-0 ml-6 transition-all duration-500 border-white/20 group-hover:border-white/40 group-open:border-aqua group-open:bg-aqua/10 group-open:rotate-45">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/70 group-open:text-aqua"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+              </div>
+            </summary>
+            <div class="pb-10 md:pb-12 max-w-2xl">
+              <p class="text-[15px] md:text-xl text-slate-300/80 leading-relaxed font-light mb-8">Acompanhamento completo da operação, do planejamento à execução. Garantimos que as estratégias saiam do papel e gerem resultados mensuráveis.</p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Operação Comercial</span>
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Planejamento Estratégico</span>
+                <span class="px-4 py-2 rounded-full border border-aqua/40 text-sm text-aqua font-light">Crescimento Escalável</span>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+      <section class="section-y bg-offwhite">
+        <div class="container-page">
+          <div class="grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-1">
+              <span class="section-eyebrow">FAQ</span>
+              <h2 class="title-standard mt-2">
+                Dúvidas frequentes
+              </h2>
+              <p class="subtitle-standard">
+                Ainda tem dúvidas sobre como uma contabilidade especializada pode mudar o rumo da sua clínica?
+              </p>
+            </div>
+            
+            <div class="lg:col-span-2 flex flex-col gap-5">
+              <details class="group bg-white rounded-2xl border border-transparent hover:border-aqua/20 shadow-sm hover:shadow-md transition-all duration-300 p-6 md:p-8" open>
+                <summary class="flex items-center justify-between font-bold text-[18px] md:text-xl text-navy cursor-pointer list-none outline-none">
+                  <span class="pr-6">A Odontto atende em todo o Brasil?</span>
+                  <div class="w-10 h-10 rounded-full bg-offwhite flex items-center justify-center shrink-0 group-open:bg-aqua/10 transition-colors">
+                    <i data-lucide="chevron-down" class="transform transition-transform duration-300 group-open:rotate-180 text-aqua" style="width: 20px; height: 20px;"></i>
+                  </div>
+                </summary>
+                <p class="text-[15px] text-secondary leading-relaxed pt-5 mt-5 border-t border-border/60">
+                  Sim. Graças à nossa estrutura 100% digital e em nuvem, atendemos clínicas odontológicas em todos os estados do Brasil, garantindo agilidade e cumprimento da legislação local.
+                </p>
+              </details>
+              
+              <details class="group bg-white rounded-2xl border border-transparent hover:border-aqua/20 shadow-sm hover:shadow-md transition-all duration-300 p-6 md:p-8">
+                <summary class="flex items-center justify-between font-bold text-[18px] md:text-xl text-navy cursor-pointer list-none outline-none">
+                  <span class="pr-6">Como funciona a troca de contabilidade?</span>
+                  <div class="w-10 h-10 rounded-full bg-offwhite flex items-center justify-center shrink-0 group-open:bg-aqua/10 transition-colors">
+                    <i data-lucide="chevron-down" class="transform transition-transform duration-300 group-open:rotate-180 text-aqua" style="width: 20px; height: 20px;"></i>
+                  </div>
+                </summary>
+                <p class="text-[15px] text-secondary leading-relaxed pt-5 mt-5 border-t border-border/60">
+                  É muito mais simples do que parece. Nossa equipe cuida de toda a transição, comunicando-se com seu antigo contador para solicitar os documentos necessários e regularizar sua base conosco sem pausar sua operação.
+                </p>
+              </details>
+
+              <details class="group bg-white rounded-2xl border border-transparent hover:border-aqua/20 shadow-sm hover:shadow-md transition-all duration-300 p-6 md:p-8">
+                <summary class="flex items-center justify-between font-bold text-[18px] md:text-xl text-navy cursor-pointer list-none outline-none">
+                  <span class="pr-6">Vocês fazem o imposto de renda da pessoa física (dentista)?</span>
+                  <div class="w-10 h-10 rounded-full bg-offwhite flex items-center justify-center shrink-0 group-open:bg-aqua/10 transition-colors">
+                    <i data-lucide="chevron-down" class="transform transition-transform duration-300 group-open:rotate-180 text-aqua" style="width: 20px; height: 20px;"></i>
+                  </div>
+                </summary>
+                <p class="text-[15px] text-secondary leading-relaxed pt-5 mt-5 border-t border-border/60">
+                  Sim! Nós entendemos que a saúde financeira do dono está ligada à da clínica. Fazemos o IRPF, Carnê-Leão e ajudamos a definir a melhor proporção de pró-labore x distribuição de lucros.
+                </p>
+              </details>
+
+              <details class="group bg-white rounded-2xl border border-transparent hover:border-aqua/20 shadow-sm hover:shadow-md transition-all duration-300 p-6 md:p-8">
+                <summary class="flex items-center justify-between font-bold text-[18px] md:text-xl text-navy cursor-pointer list-none outline-none">
+                  <span class="pr-6">Por que escolher uma contabilidade nichada para odontologia?</span>
+                  <div class="w-10 h-10 rounded-full bg-offwhite flex items-center justify-center shrink-0 group-open:bg-aqua/10 transition-colors">
+                    <i data-lucide="chevron-down" class="transform transition-transform duration-300 group-open:rotate-180 text-aqua" style="width: 20px; height: 20px;"></i>
+                  </div>
+                </summary>
+                <p class="text-[15px] text-secondary leading-relaxed pt-5 mt-5 border-t border-border/60">
+                  A odontologia tem particularidades tributárias enormes (equiparação hospitalar, retenções, conselhos). Um escritório generalista frequentemente erra e faz a clínica pagar impostos a mais ou ficar vulnerável a multas do CRO e Receita.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="bg-white py-24 text-center border-t border-border">
+        <div class="container-page max-w-4xl">
+          <h2 class="title-standard mb-6">
+            Sua clínica cresce, seus controles <span class="text-aqua">precisam crescer junto.</span>
+          </h2>
+          <p class="subtitle-standard mx-auto mb-10">
+            Antes de trocar de contabilidade, faça um diagnóstico e descubra o que a sua atual não está mostrando.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="https://wa.me/5521971807881" target="_blank" rel="noreferrer" class="btn-gradient hover:btn-gradient-hover inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-extrabold transition-all shadow-[0_4px_14px_0_rgba(0,200,189,0.39)] hover:shadow-[0_6px_20px_rgba(198,213,58,0.23)] hover:-translate-y-0.5">
+              Falar no WhatsApp
+            </a>
+            <a href="contato.html" class="btn-gradient hover:btn-gradient-hover inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-extrabold transition-all shadow-[0_4px_14px_0_rgba(0,200,189,0.39)] hover:shadow-[0_6px_20px_rgba(198,213,58,0.23)] hover:-translate-y-0.5">
+              Agendar reunião grátis
+            </a>
+          </div>
+        </div>
+      </section>
+    
+    </main>
+
+    <footer class="overflow-hidden bg-navy text-white">
+      <div class="container-page py-14 sm:py-16 lg:py-20">
+        <div class="grid gap-10 border-b border-white/10 pb-12 lg:grid-cols-2 lg:items-center">
+          <div class="inline-flex w-fit">
+            <img src="/logo-odontto-cor-clara.png" alt="Odontto Contabilidade" class="mb-6 h-auto w-37.5 sm:w-44.5">
+          </div>
+          <p class="max-w-xl text-base leading-7 text-white/70 lg:ml-auto lg:text-right">
+            Especialistas em contabilidade para dentistas, consultórios e clínicas odontológicas.
+          </p>
+        </div>
+        
+        <div class="grid gap-10 pt-12 md:grid-cols-2 lg:grid-cols-[1fr_1.45fr_1fr_1fr_0.7fr] lg:gap-12">
+          <section aria-labelledby="footer-contato">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-contato">Contato</h2>
+            <ul class="mt-7 grid gap-5">
+              <li>
+                <a href="tel:+552126354903" class="group flex items-center gap-4 text-sm font-bold text-white/84 transition-colors hover:text-white">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-hover:border-aqua/50 group-hover:bg-aqua/10">
+                    <i data-lucide="Phone" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                  </span>
+                  <span>(21) 2635-4903</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/5521971807881" target="_blank" rel="noreferrer" class="group flex items-center gap-4 text-sm font-bold text-white/84 transition-colors hover:text-white">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-hover:border-aqua/50 group-hover:bg-aqua/10">
+                    <i data-lucide="MessageCircle" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                  </span>
+                  <span>(21) 97180-7881</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="footer-enderecos">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-enderecos">Endereços</h2>
+            <ul class="mt-7 grid gap-5">
+              <li>
+                <details class="group">
+                  <summary class="flex cursor-pointer list-none items-center gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-open:border-aqua/40 group-open:bg-aqua/10">
+                      <i data-lucide="MapPin" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                    </span>
+                    <span class="flex min-w-0 items-center gap-2 text-sm font-bold text-white/84 transition-colors group-open:text-white">
+                      <span>Matriz - Itaboraí</span>
+                      <i data-lucide="ChevronDown" class="shrink-0 text-white/62 transition-transform duration-200 group-open:rotate-180" style="width: 16px; height: 16px;"></i>
+                    </span>
+                  </summary>
+                  <address class="ml-14 mt-5 space-y-1 text-sm not-italic leading-6 text-white/68">
+                    <p>Prédio Hellix - Av. Vinte e Dois de Maio, 6331</p>
+                    <p>Bloco 1, 7° andar</p>
+                    <p>Jardim Imperial, Itaboraí - RJ</p>
+                    <p class="pt-2 font-extrabold text-white/88">CEP: 24800-258</p>
+                  </address>
+                </details>
+              </li>
+              <li>
+                <details class="group">
+                  <summary class="flex cursor-pointer list-none items-center gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-open:border-aqua/40 group-open:bg-aqua/10">
+                      <i data-lucide="MapPin" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                    </span>
+                    <span class="flex min-w-0 items-center gap-2 text-sm font-bold text-white/84 transition-colors group-open:text-white">
+                      <span>Filial - Rio de Janeiro</span>
+                      <i data-lucide="ChevronDown" class="shrink-0 text-white/62 transition-transform duration-200 group-open:rotate-180" style="width: 16px; height: 16px;"></i>
+                    </span>
+                  </summary>
+                  <address class="ml-14 mt-5 space-y-1 text-sm not-italic leading-6 text-white/68">
+                    <p>R. México, 11 Bloco B</p>
+                    <p>Centro do Rio - RJ</p>
+                    <p class="pt-2 font-extrabold text-white/88">CEP: 20030-114</p>
+                  </address>
+                </details>
+              </li>
+            </ul>
+          </section>
+
+          <nav aria-labelledby="footer-institucional">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-institucional">Institucional</h2>
+            <ul class="mt-7 grid gap-5">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-[linear-gradient(135deg,var(--color-aqua),var(--color-lime))]" aria-hidden="true"></span>
+                <a href="/#duvidas" class="text-sm font-medium text-white/72 transition-colors hover:text-white">Dúvidas</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-[linear-gradient(135deg,var(--color-aqua),var(--color-lime))]" aria-hidden="true"></span>
+                <a href="https://www.google.com" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm font-medium text-white/72 transition-colors hover:text-white">
+                  <span>Trabalhe conosco</span>
+                  <span class="rounded-full border border-lime/40 bg-lime/10 px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em] text-lime">Vagas</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section aria-labelledby="footer-juridico">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-juridico">Jurídico</h2>
+            <ul class="mt-7 grid gap-5">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-white/20" aria-hidden="true"></span>
+                <span class="text-sm font-medium text-white/72">Política de Privacidade</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-white/20" aria-hidden="true"></span>
+                <span class="text-sm font-medium text-white/72">Termos de Uso</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-white/20" aria-hidden="true"></span>
+                <span class="text-sm font-medium text-white/72">Política de Cookies</span>
+              </li>
+            </ul>
+          </section>
+
+          <nav aria-label="Redes sociais">
+            <ul class="flex gap-5 lg:justify-end">
+              <li>
+                <a href="/contato" aria-label="Instagram" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Instagram" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/contato" aria-label="Facebook" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Facebook" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/contato" aria-label="LinkedIn" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Linkedin" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/contato" aria-label="YouTube" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Youtube" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/12">
+        <div class="container-page flex flex-col gap-3 py-5 text-sm text-white/62 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Odontto Contabilidade.</p>
+          <p>Contabilidade especializada para o segmento odontológico.</p>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

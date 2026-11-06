@@ -1,0 +1,1 @@
+As imagens nesta pasta registram versões anteriores do site. Elas não representam a implementação atual. Gere novas capturas das rotas após publicar em homologação antes de usá-las para revisão visual.

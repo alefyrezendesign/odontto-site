@@ -1,0 +1,9 @@
+.baseline/
+.next/
+node_modules/
+public/
+docs/previews/
+docs/references/
+package-lock.json
+next-env.d.ts
+tsconfig.tsbuildinfo

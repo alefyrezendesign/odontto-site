@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Contabilidade Especializada em Odontologia | Odontto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="/main.js"></script>
+</head>
+<body class="flex min-h-screen flex-col font-sans text-navy antialiased">
+    <svg aria-hidden="true" class="absolute" focusable="false" height="0" width="0">
+        <defs>
+            <linearGradient id="odontto-icon-gradient" gradientUnits="userSpaceOnUse" x1="2" x2="22" y1="2" y2="22">
+                <stop offset="0%" stop-color="#00C8BD" />
+                <stop offset="100%" stop-color="#C6D53A" />
+            </linearGradient>
+            <linearGradient id="odontto-gradient-solutions-card-0" gradientUnits="userSpaceOnUse" x1="0" x2="24" y1="12" y2="12">
+                <stop offset="0%" stop-color="#00C8BD"></stop>
+                <stop offset="100%" stop-color="#C6D53A"></stop>
+            </linearGradient>
+            <linearGradient id="odontto-gradient-solutions-card-1" gradientUnits="userSpaceOnUse" x1="0" x2="24" y1="12" y2="12">
+                <stop offset="0%" stop-color="#00C8BD"></stop>
+                <stop offset="100%" stop-color="#C6D53A"></stop>
+            </linearGradient>
+            <linearGradient id="odontto-gradient-solutions-card-2" gradientUnits="userSpaceOnUse" x1="0" x2="24" y1="12" y2="12">
+                <stop offset="0%" stop-color="#00C8BD"></stop>
+                <stop offset="100%" stop-color="#C6D53A"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <header class="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur">
+      <div class="container-page flex min-h-20 items-center justify-between gap-4">
+        <a href="index.html" class="flex min-h-11 items-center gap-3" aria-label="Odontto Contabilidade - início">
+          <img src="/logo-odontto-cor-escura.png" alt="Odontto Contabilidade" class="h-auto w-37.5 sm:w-44.5">
+        </a>
+        
+        <nav aria-label="Navegação principal" class="hidden lg:block">
+          <ul class="flex items-center gap-1 rounded-full border border-border bg-offwhite px-2 py-2">
+            <li>
+              <a href="index.html"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Início
+              </a>
+            </li>
+            <li>
+              <a href="sobre-nos.html"  aria-current="page" class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy bg-white text-navy shadow-line">
+                Sobre nós
+              </a>
+            </li>
+            <li>
+              <a href="/#servicos"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="/#duvidas"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Dúvidas
+              </a>
+            </li>
+            <li>
+              <a href="contato.html"  class="block rounded-full px-4 py-2 text-sm font-bold text-secondary transition-colors hover:bg-white hover:text-navy">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hidden lg:block">
+          <a href="/contato#formulario" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold transition-[background-color,color,transform,box-shadow] duration-200 hover:-translate-y-0.5 active:translate-y-0 bg-navy text-white hover:bg-aqua hover:text-navy focus-visible:outline-aqua">
+            <span>Solicitar Diagnóstico Grátis</span>
+            <span aria-hidden="true" class="icon-gradient">
+              <i data-lucide="ArrowRight" style="width: 18px; height: 18px;"></i>
+            </span>
+          </a>
+        </div>
+
+        <button 
+          type="button" 
+          onclick="document.getElementById('menu-mobile').classList.toggle('hidden')"
+          class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-border text-navy lg:hidden" 
+          aria-expanded=isMenuOpen 
+          aria-controls="menu-mobile" 
+          aria-label="Abrir menu"
+        >
+          <i data-lucide="Menu" style="width: 22px; height: 22px;"></i>
+        </button>
+      </div>
+
+      
+        <div id="menu-mobile" class="border-t border-border bg-white lg:hidden hidden">
+          <nav aria-label="Navegação mobile" class="container-page py-4">
+            <ul class="grid gap-2">
+              <li>
+                <a href="index.html"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a href="sobre-nos.html"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Sobre nós
+                </a>
+              </li>
+              <li>
+                <a href="/#servicos"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a href="/#duvidas"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Dúvidas
+                </a>
+              </li>
+              <li>
+                <a href="contato.html"  class="block rounded-lg px-4 py-3 text-base font-bold text-navy hover:bg-aqua-light">
+                  Contato
+                </a>
+              </li>
+            </ul>
+            <a onClick=closeMenu href="/contato#formulario" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold transition-[background-color,color,transform,box-shadow] duration-200 hover:-translate-y-0.5 active:translate-y-0 bg-navy text-white hover:bg-aqua hover:text-navy focus-visible:outline-aqua mt-4 w-full">
+              <span>Solicitar Diagnóstico Grátis</span>
+              <span aria-hidden="true" class="icon-gradient">
+                <i data-lucide="ArrowRight" style="width: 18px; height: 18px;"></i>
+              </span>
+            </a>
+          </nav>
+        </div>
+      
+    </header>
+    
+    <main id="conteudo">
+        
+      
+      <section class="relative flex min-h-[60vh] items-center py-16 sm:py-20 lg:py-24">
+        <div class="absolute inset-0 z-0">
+          <img src="/images/odontto-sobre-hero-bg.png" alt="Equipe Odontto em atendimento" class="absolute inset-0 h-full w-full object-cover object-[center_30%]">
+          <div class="absolute inset-0 bg-navy/80 mix-blend-multiply"></div>
+          <div class="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(3,17,78,0.7),rgba(3,17,78,0.95))]"></div>
+        </div>
+        
+        <div class="container-page relative z-10 text-center text-white">
+          <div class="mx-auto max-w-3xl flex flex-col items-center gap-6 reveal-soft">
+            <span class="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.15em] backdrop-blur text-white">
+              Nossa História
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1]">
+              Mais do que contadores, somos seu parceiro estratégico
+            </h1>
+            <p class="text-lg leading-relaxed text-white/80 sm:text-xl">
+              A Odontto não foi criada apenas para cumprir obrigações. Foi criada para entender o negócio do dentista. Nascemos de uma inquietação: por que clínicas faturam bem, mas seus donos raramente veem o lucro no final do mês?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section-y bg-white">
+        <div class="container-page">
+          <div class="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
+            <div class="flex flex-col items-start gap-6">
+              <h2 class="title-standard">
+                A origem da Odontto
+              </h2>
+              <div class="space-y-4 text-lg text-secondary">
+                <p>
+                  A Odontto Contabilidade foi fundada a partir da observação diária da rotina exaustiva dos profissionais da odontologia. Dentistas são formados para cuidar de pessoas, realizar procedimentos complexos e transformar sorrisos.
+                </p>
+                <p>
+                  No entanto, na faculdade de odontologia não se ensina gestão, finanças ou planejamento tributário. E é exatamente aí que clínicas excelentes fecham as portas ou profissionais vivem no limite do estresse financeiro.
+                </p>
+                <p>
+                  Decidimos nos especializar 100% neste nicho. Entendemos cada particularidade: o custo alto dos materiais (implantes, resinas), a complexidade de dividir honorários com parceiros (dentistas associados) e a melhor forma de declarar rendimentos sem cair na malha fina.
+                </p>
+              </div>
+            </div>
+            <div class="relative aspect-4/3 w-full overflow-hidden rounded-2xl lg:aspect-square">
+              <img src="/images/odontto-historia-dentista-gestora.webp" alt="Dentista focada na gestão da clínica" class="absolute inset-0 h-full w-full object-cover">
+              <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section-y bg-offwhite">
+        <div class="container-page">
+          <div class="mx-auto max-w-3xl text-center mb-16">
+            <span class="section-eyebrow mb-6">Nossos Pilares</span>
+            <h2 class="title-standard">
+              Os valores que guiam nossa atuação
+            </h2>
+          </div>
+          
+          <div class="grid gap-6 md:grid-cols-3">
+            <div class="card-base shadow-soft p-8 text-center transition-transform hover:-translate-y-1">
+              <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-aqua/10 text-aqua">
+                <i data-lucide="Heart" style="width: 32px; height: 32px;"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-navy mb-4">Atendimento Focado</h3>
+              <p class="text-[14px] md:text-[15px] leading-relaxed text-secondary">
+                Por trás de cada clínica existe uma operação que não pode parar. Nosso atendimento reflete esse cuidado: ágil, especializado e focado no seu negócio.
+              </p>
+            </div>
+            
+            <div class="card-base shadow-soft p-8 text-center transition-transform hover:-translate-y-1">
+              <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-aqua/10 text-aqua">
+                <i data-lucide="ShieldCheck" style="width: 32px; height: 32px;"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-navy mb-4">Ética e Transparência</h3>
+              <p class="text-[14px] md:text-[15px] leading-relaxed text-secondary">
+                Não fazemos promessas mágicas de "zero imposto". Garantimos a menor carga tributária possível <strong>dentro da lei</strong>, protegendo seu patrimônio.
+              </p>
+            </div>
+            
+            <div class="card-base shadow-soft p-8 text-center transition-transform hover:-translate-y-1">
+              <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-aqua/10 text-aqua">
+                <i data-lucide="Lightbulb" style="width: 32px; height: 32px;"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-navy mb-4">Inteligência Estratégica</h3>
+              <p class="text-[14px] md:text-[15px] leading-relaxed text-secondary">
+                Não entregamos apenas guias. Transformamos dados contábeis em decisões para a clínica: quando contratar, quando expandir e quanto retirar com segurança.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section-y bg-white">
+        <div class="container-page">
+          <div class="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
+            <div class="relative aspect-4/3 w-full overflow-hidden rounded-2xl lg:aspect-video order-2 lg:order-1">
+              <img src="/images/odontto-equipe-atendimento.png" alt="Equipe de atendimento Odontto" class="absolute inset-0 h-full w-full object-cover">
+              <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10"></div>
+            </div>
+            <div class="flex flex-col items-start gap-6 order-1 lg:order-2">
+              <span class="section-eyebrow">Para quem fazemos</span>
+              <h2 class="title-standard">
+                Nossas soluções atendem a todo o ecossistema odontológico
+              </h2>
+              <ul class="mt-4 grid gap-5 w-full">
+                <li class="card-base flex items-center gap-4 p-4 shadow-line">
+                  <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-lime/20 text-navy">
+                    <i data-lucide="UserPlus" style="width: 24px; height: 24px;"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-navy">Dentistas Recém-formados</h3>
+                    <p class="text-[14px] md:text-[15px] leading-relaxed text-secondary">Abertura de CNPJ e primeiros passos na profissão.</p>
+                  </div>
+                </li>
+                <li class="card-base flex items-center gap-4 p-4 shadow-line">
+                  <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-aqua/20 text-navy">
+                    <i data-lucide="Target" style="width: 24px; height: 24px;"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-navy">Consultórios Individuais</h3>
+                    <p class="text-[14px] md:text-[15px] leading-relaxed text-secondary">Profissionais estabelecidos buscando redução tributária e organização.</p>
+                  </div>
+                </li>
+                <li class="card-base flex items-center gap-4 p-4 shadow-line">
+                  <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy/10 text-navy">
+                    <i data-lucide="Users" style="width: 24px; height: 24px;"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-navy">Clínicas e Redes</h3>
+                    <p class="text-[14px] md:text-[15px] leading-relaxed text-secondary">Gestão complexa, BPO financeiro e folha de pagamento de múltiplos sócios/funcionários.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="py-16 sm:py-20 bg-aqua text-navy text-center">
+        <div class="container-page max-w-3xl">
+          <h2 class="title-standard mb-6">
+            Antes de trocar de contabilidade, descubra o que a sua atual não está mostrando.
+          </h2>
+          <p class="subtitle-standard mx-auto mb-8 opacity-90">
+            A única forma de saber se você está deixando dinheiro na mesa é analisando. Dê o primeiro passo para o crescimento seguro da sua clínica.
+          </p>
+          <a href="/contato#formulario" class="inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-extrabold bg-navy text-white hover:bg-white hover:text-navy transition-all shadow-[0_4px_14px_0_rgba(0,0,0,0.15)] hover:-translate-y-0.5">
+            Solicitar Diagnóstico Grátis
+          </a>
+        </div>
+      </section>
+    
+    </main>
+
+    <footer class="overflow-hidden bg-navy text-white">
+      <div class="container-page py-14 sm:py-16 lg:py-20">
+        <div class="grid gap-10 border-b border-white/10 pb-12 lg:grid-cols-2 lg:items-center">
+          <div class="inline-flex w-fit">
+            <img src="/logo-odontto-cor-clara.png" alt="Odontto Contabilidade" class="mb-6 h-auto w-37.5 sm:w-44.5">
+          </div>
+          <p class="max-w-xl text-base leading-7 text-white/70 lg:ml-auto lg:text-right">
+            Especialistas em contabilidade para dentistas, consultórios e clínicas odontológicas.
+          </p>
+        </div>
+        
+        <div class="grid gap-10 pt-12 md:grid-cols-2 lg:grid-cols-[1fr_1.45fr_1fr_1fr_0.7fr] lg:gap-12">
+          <section aria-labelledby="footer-contato">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-contato">Contato</h2>
+            <ul class="mt-7 grid gap-5">
+              <li>
+                <a href="tel:+552126354903" class="group flex items-center gap-4 text-sm font-bold text-white/84 transition-colors hover:text-white">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-hover:border-aqua/50 group-hover:bg-aqua/10">
+                    <i data-lucide="Phone" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                  </span>
+                  <span>(21) 2635-4903</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/5521971807881" target="_blank" rel="noreferrer" class="group flex items-center gap-4 text-sm font-bold text-white/84 transition-colors hover:text-white">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-hover:border-aqua/50 group-hover:bg-aqua/10">
+                    <i data-lucide="MessageCircle" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                  </span>
+                  <span>(21) 97180-7881</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="footer-enderecos">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-enderecos">Endereços</h2>
+            <ul class="mt-7 grid gap-5">
+              <li>
+                <details class="group">
+                  <summary class="flex cursor-pointer list-none items-center gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-open:border-aqua/40 group-open:bg-aqua/10">
+                      <i data-lucide="MapPin" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                    </span>
+                    <span class="flex min-w-0 items-center gap-2 text-sm font-bold text-white/84 transition-colors group-open:text-white">
+                      <span>Matriz - Itaboraí</span>
+                      <i data-lucide="ChevronDown" class="shrink-0 text-white/62 transition-transform duration-200 group-open:rotate-180" style="width: 16px; height: 16px;"></i>
+                    </span>
+                  </summary>
+                  <address class="ml-14 mt-5 space-y-1 text-sm not-italic leading-6 text-white/68">
+                    <p>Prédio Hellix - Av. Vinte e Dois de Maio, 6331</p>
+                    <p>Bloco 1, 7° andar</p>
+                    <p>Jardim Imperial, Itaboraí - RJ</p>
+                    <p class="pt-2 font-extrabold text-white/88">CEP: 24800-258</p>
+                  </address>
+                </details>
+              </li>
+              <li>
+                <details class="group">
+                  <summary class="flex cursor-pointer list-none items-center gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/4 transition-colors group-open:border-aqua/40 group-open:bg-aqua/10">
+                      <i data-lucide="MapPin" class="icon-gradient" style="width: 18px; height: 18px;"></i>
+                    </span>
+                    <span class="flex min-w-0 items-center gap-2 text-sm font-bold text-white/84 transition-colors group-open:text-white">
+                      <span>Filial - Rio de Janeiro</span>
+                      <i data-lucide="ChevronDown" class="shrink-0 text-white/62 transition-transform duration-200 group-open:rotate-180" style="width: 16px; height: 16px;"></i>
+                    </span>
+                  </summary>
+                  <address class="ml-14 mt-5 space-y-1 text-sm not-italic leading-6 text-white/68">
+                    <p>R. México, 11 Bloco B</p>
+                    <p>Centro do Rio - RJ</p>
+                    <p class="pt-2 font-extrabold text-white/88">CEP: 20030-114</p>
+                  </address>
+                </details>
+              </li>
+            </ul>
+          </section>
+
+          <nav aria-labelledby="footer-institucional">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-institucional">Institucional</h2>
+            <ul class="mt-7 grid gap-5">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-[linear-gradient(135deg,var(--color-aqua),var(--color-lime))]" aria-hidden="true"></span>
+                <a href="/#duvidas" class="text-sm font-medium text-white/72 transition-colors hover:text-white">Dúvidas</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-[linear-gradient(135deg,var(--color-aqua),var(--color-lime))]" aria-hidden="true"></span>
+                <a href="https://www.google.com" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm font-medium text-white/72 transition-colors hover:text-white">
+                  <span>Trabalhe conosco</span>
+                  <span class="rounded-full border border-lime/40 bg-lime/10 px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em] text-lime">Vagas</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section aria-labelledby="footer-juridico">
+            <h2 class="text-sm font-extrabold uppercase tracking-[0.03em] text-white" id="footer-juridico">Jurídico</h2>
+            <ul class="mt-7 grid gap-5">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-white/20" aria-hidden="true"></span>
+                <span class="text-sm font-medium text-white/72">Política de Privacidade</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-white/20" aria-hidden="true"></span>
+                <span class="text-sm font-medium text-white/72">Termos de Uso</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-white/20" aria-hidden="true"></span>
+                <span class="text-sm font-medium text-white/72">Política de Cookies</span>
+              </li>
+            </ul>
+          </section>
+
+          <nav aria-label="Redes sociais">
+            <ul class="flex gap-5 lg:justify-end">
+              <li>
+                <a href="/contato" aria-label="Instagram" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Instagram" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/contato" aria-label="Facebook" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Facebook" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/contato" aria-label="LinkedIn" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Linkedin" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/contato" aria-label="YouTube" class="icon-gradient inline-flex rounded-full p-1 transition-transform hover:-translate-y-0.5">
+                  <i data-lucide="Youtube" style="width: 21px; height: 21px;"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/12">
+        <div class="container-page flex flex-col gap-3 py-5 text-sm text-white/62 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Odontto Contabilidade.</p>
+          <p>Contabilidade especializada para o segmento odontológico.</p>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
